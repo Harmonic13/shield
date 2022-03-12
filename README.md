@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Faceshield Classifier
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+--------------------------------------------------------------------------------
+Steps on how to use the system:
 
-## Available Scripts
+  1. Click the "choose file" button.
+  2. select and image in your local computer. (.png, .jpg, .jpeg, .gif only!)
+  3. Select the "Identify Image: button.
+  4. The result will load after you click the Identify Image button.
+---------------------------------------------------------------------------------
 
-In the project directory, you can run:
+## Problem & Limitation of the system:
 
-### `npm start`
+  1. The confidence level result only appears 100% for every answer it gets, but it states the right answer for the classification of face shield.
+  2. It cannot function in selecting multiple images at once. It can only detect one image at a time.
+ 
+---------------------------------------------------------------------------------
+ 
+ ## How the whole system was made:
+ 
+  1. The system was first made on google colab using tensorflow & tensorflow.js.
+  2. The images for "noshield" & "shielded" were stored in the Dataset folder in MyDrive.
+  3. The image size is 250px.
+  4. The Dataset folder has 2 paths which are "train" & "test" folders which has the 2 classes inside.
+  5. I used softmax as an activation. Used sparse_categorical_crossentropy in loss and RMSprop as its optimizer and accuracy as its metrics.
+  6. The model file that contained the .bin file and .json file was imported inside the react app in the src folder.
+  7. I, then imported it to github inorder to set up in running the "npm start" command.
+  8. I used Herokuapp to deploy the system.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+----------------------------------------------------------------------------------
