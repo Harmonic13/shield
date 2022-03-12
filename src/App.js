@@ -12,7 +12,7 @@ function App() {
   let imageRef = useRef()
 
   const url = {
-    //modelURL: 'https://raw.githubusercontent.com/Harmonic13/FSClass/main/src/model/model.json'
+    modelURL: 'https://raw.githubusercontent.com/Harmonic13/shield/main/src/model/model.json'
   }
 
   const loadModel = async (url) => {
