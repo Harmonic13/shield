@@ -1,7 +1,7 @@
 # Faceshield Classifier
 
 --------------------------------------------------------------------------------
-Steps on how to use the system:
+## Steps on how to use the system:
 
   1. Click the "choose file" button.
   2. select and image in your local computer. (.png, .jpg, .jpeg, .gif only!)
