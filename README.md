@@ -27,4 +27,10 @@
   7. I, then imported it to github inorder to set up in running the "npm start" command.
   8. I used Herokuapp to deploy the system.
 
-----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+
+## Link of the deployed system:
+
+https://fsclass.herokuapp.com/
+
+---------------------------------------------------------------------------------
