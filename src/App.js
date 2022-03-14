@@ -12,7 +12,8 @@ function App() {
   let imageRef = useRef()
 
   const url = {
-    modelURL: 'https://raw.githubusercontent.com/Harmonic13/shield/main/src/model/model.json'
+    //modelURL: 'https://raw.githubusercontent.com/Harmonic13/shield/main/src/model/model.json'
+    modelURL: 'https://raw.githubusercontent.com/Harmonic13/shield/main/src/model/model.json?token=GHSAT0AAAAAABSIITH7GS6PSNNOT2RNWXFIYRO63ZQ'
   }
 
   const loadModel = async (url) => {
